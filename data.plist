@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>To fix this issue, open the Utilities section of this app, and press the UICache button, then, press the Respring button. Cydia should appear.</string>
+	<string>First edit /etc/hosts to remove the single line added by LiberiOS, then Delete /etc/motd (the LiberiOS SSH message), then delete /Applications/Cydia.app (its there, you just don&apos;t see it yet), and delete the /jb/ folder.</string>
+	<string>If you have bootlooped your device, try to do an iCloud erase if you had FMi on, and if you already had the nonce of your saved blobs in NVRAM and supported SEP is still signed, you can go and do a SHSH2 restore.</string>
+	<string>Go to ipsw.me on your PC or Mac, and download the IPSW file for your version. Shift(cmd on mac) click the restore button (update button if u want to keep data) and select the IPSW you downloaded.</string>
+	<string>Go to TSSSaver.1conan.com. Type your ECID there, and select your device model. put the boardconfig there also. (BoardConfig will be in the Info section of this app), then click submit. if you want to download the blobs to the PC/Mac, just click Download ZIP.</string>
+	<string>a SHSH blob is a small piece of data, used to authenticate a firmware on the device. A long time ago, users were able to use their blobs by changing their hosts file. Apple fixed this loophole by adding an APNonce. an APNonce is a string of characters used to verify the SHSH blob. When a signed firmware is being restored, iTunes grabs SHSH for the Nonce the device is generating, but since we will not know what nonce it will generate, we have to generate our own random one and then Set the device&apos;s nonce to use the blobs.</string>
+</array>
+</plist>
